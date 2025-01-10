@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Personalizado</title>
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+        /*Añado el fondo para cada canvas*/
+        #tetris {
+            background-color: black;
+        }
+        #ficha {
+            background-color: plum;
+        }
+        #puntuacion {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="ficha" width="300" height="100"></canvas> <!--Añado un tercer canvas para mostrar la siguiente ficha-->
+    <canvas id="tetris" width="300" height="600"></canvas>
+    <canvas id="puntuacion" width="300" height="100"></canvas> <!--Añado un segundo canvas para la puntuacion-->
+    <script src="tetris.js"></script>
+</body>
+</html>
